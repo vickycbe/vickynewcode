@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-project-ui
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: simple-project-ui
+  template:
+    metadata:
+      labels:
+        app: simple-project-ui
+    spec:
+      containers:
+      - image: nginx:latest
+        name: simple-project-ui
+        ports:
+        - containerPort: 80

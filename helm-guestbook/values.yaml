@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: https://hub.docker.com/r/corelab/ks-guestbook-demo
+  repository: hub.docker.com/r/corelab/ks-guestbook-demo
   tag: 0.1
   pullPolicy: IfNotPresent
 

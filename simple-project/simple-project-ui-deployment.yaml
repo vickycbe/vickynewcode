@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: simple-project-ui
 spec:
-  replicas: 4
+  replicas: 2
   revisionHistoryLimit: 4
   selector:
     matchLabels:

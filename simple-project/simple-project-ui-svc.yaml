@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: simple-project-ui
+  namespace: simple-project
 spec:
   ports:
   - port: 80
